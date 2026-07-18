@@ -1,0 +1,56 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Mac system files
+.DS_Store
+
+# IntelliJ files
+.idea/
+*.iml
+
+# Java / Maven
+target/
+*.class
+*.log
+
+# Maven wrapper generated files
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# User uploaded files
+backend/uploads/
+backend/Documentationfile
+
+# Environment secrets
+.env
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+*.yml
+*.log
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/htmlReport
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
