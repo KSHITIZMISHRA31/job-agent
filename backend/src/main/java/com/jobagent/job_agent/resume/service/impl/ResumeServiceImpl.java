@@ -1,7 +1,7 @@
 package com.jobagent.job_agent.resume.service.impl;
 
 import com.jobagent.job_agent.ai.client.AIClient;
-import com.jobagent.job_agent.ai.dto.AIResponse;
+import com.jobagent.job_agent.ai.dto.ResumeAIResponse;
 import com.jobagent.job_agent.ai.dto.ResumeAnalysisResult;
 import com.jobagent.job_agent.ai.provider.gemini.GeminiExecutionEngine;
 import com.jobagent.job_agent.ai.service.ResumeAnalysisService;
@@ -39,7 +39,7 @@ public class ResumeServiceImpl implements ResumeService {
             log.info("1. File saved : "+filePath);
             String extractedText = pdfParser.extractText(filePath);
             log.info("Extracted text - "+extractedText);
-            AIResponse aiResponse = aiClient.analyzeResume(extractedText);
+            ResumeAIResponse aiResponse = aiClient.analyzeResume(extractedText);
             ResumeAnalysisResult analysis = aiResponse.getResult();
             log.info("Anlysed values - "+analysis);
             Resume resume = new Resume();

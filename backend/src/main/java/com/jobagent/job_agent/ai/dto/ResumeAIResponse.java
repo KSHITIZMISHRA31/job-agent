@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 @Builder
-public class AIResponse {
+public class ResumeAIResponse {
 
     private ResumeAnalysisResult result;
 
